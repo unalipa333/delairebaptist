@@ -1,5 +1,5 @@
 # delairebaptist
-This is for the development of the del aire baptist church for John L. Jefferson
+This is for the development of the Del Aire Baptist church
 
 Languages:
 Python
