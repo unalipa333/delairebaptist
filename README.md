@@ -1,18 +1,16 @@
-# delairebaptist
-This is for the development of the Del Aire Baptist church
 
-Languages:
-Python
-html
-css
+This application is for the "Thriving Dad's" program
+This program is managed by Pastor Jefferson of the Del Aire Baptist Church 
 
-Frameworks:
-Django
-Bootstrap
+This is an ongoing development project. 
 
-round 1
-started off with the Django newapp setup
-template inheritance 
-nav bar
-some css
-lots of linking 
+Goals:
+Blog
+User login 
+User intake
+
+
+Requirements:
+Latest version of python 
+pip install Django 
+
