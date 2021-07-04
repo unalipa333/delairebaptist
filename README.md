@@ -6,9 +6,9 @@ This application will take and store user input. User input will be supplied by 
 
 Goals of the Application:
 
-Create an intake process for each new member
-Transition program to paperless processing
-Improve efficiency and decrease program expenses by utilizing Amazon Web Services 
+Create an intake process for each new member #lines
+Transition program to paperless processing #lines
+Improve efficiency and decrease program expenses by utilizing Amazon Web Services #lines
 
 
 Please make sure that you have the latest version of python installed on your computer. 
