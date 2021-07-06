@@ -6,7 +6,10 @@
 
 ### Goals of the Application:
 
-- Create an intake process for each new member 
+- Create an intake process for each new member/user
+- Store member/user input 
+- Create a blog/forum for members/users
+- Create user login 
 - Transition program to paperless processing 
 - Improve efficiency and decrease program expenses by utilizing Amazon Web Services 
 
