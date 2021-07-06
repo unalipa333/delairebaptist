@@ -5,7 +5,8 @@ from .models import Post
 
 
 
-
+#the home function is going to handle the traffic from the home page of the blog
+# this will control what the user sees. note the html file.  
 
 def home(request):
     context = { 
@@ -13,7 +14,9 @@ def home(request):
     }
     return render(request, 'blog/home.html', context)
 
+# the about function is going to handle the traffic from the about page of the blog
+# note the html file
 def about(request):
-    return render(request, 'blog/about.html')
+    return render(request, 'blog/about.html', {'title': 'About}'})
 
 

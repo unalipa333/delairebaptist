@@ -1,3 +1,6 @@
+#this file is how the python web application and the server communicate
+# I won't be messing with this file  
+
 """
 WSGI config for delairebaptis project.
 

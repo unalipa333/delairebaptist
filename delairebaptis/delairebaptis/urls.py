@@ -1,3 +1,5 @@
+#These are the urls and the url mapping to where we will be sending the user
+
 """delairebaptis URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,7 +18,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#These are the url paths and where they lead
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
+    path('', include('blog.urls')),
 ]

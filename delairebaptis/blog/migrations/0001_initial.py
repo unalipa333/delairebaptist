@@ -6,6 +6,8 @@ import django.db.models.deletion
 import django.utils.timezone
 
 
+# This is what was created/populated automatically by running migrations for 'Post'
+# to setup the sqlite database 'Post'
 class Migration(migrations.Migration):
 
     initial = True

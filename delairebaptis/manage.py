@@ -1,4 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python 
+# this file allows us to run command line commands. 
+# do not make changes to this file unless you really know what you're doing
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
