@@ -11,13 +11,13 @@
 - Improve efficiency and decrease program expenses by utilizing Amazon Web Services 
 
 
-- Please make sure that you have the latest version of python installed on your computer. 
+- - - Please make sure that you have the latest version of python installed on your computer. 
 
 
 Install
 pip install django
 
-The Django framework has many preinstalled tools out of the box and provides almost anything a developer may want/need in order to develop their application. This is a much richer framework than Flask.
+The Django framework has many preinstalled tools out of the box and provides almost anything a developer may want/need in order to develop their application. This is a much richer and robust framework than Flask.
 
 
 
