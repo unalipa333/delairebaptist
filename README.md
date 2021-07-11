@@ -6,15 +6,17 @@
 
 ### Goals of the Application:
 
-- Create an intake process for each new member 
+- Create an intake process for each new member/user
+- Store member/user input 
+- Create a blog/forum for members/users
+- Create user login 
 - Transition program to paperless processing 
 - Improve efficiency and decrease program expenses by utilizing Amazon Web Services 
 
 
-- - - Please make sure that you have the latest version of python installed on your computer. 
 
 
-Install
+pip install python
 pip install django
 
 The Django framework has many preinstalled tools out of the box and provides almost anything a developer may want/need in order to develop their application. This is a much richer and robust framework than Flask.
