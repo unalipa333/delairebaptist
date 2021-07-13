@@ -18,6 +18,7 @@
 
 pip install python
 pip install django
+pip install pillow
 
 The Django framework has many preinstalled tools out of the box and provides almost anything a developer may want/need in order to develop their application. This is a much richer and robust framework than Flask.
 
