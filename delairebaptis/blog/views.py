@@ -18,7 +18,7 @@ def home(request):
 # the about function is going to handle the traffic from the about page of the blog
 # note the html file
 
-@login_required()
+#@login_required()
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About}'})
 
