@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from .forms import UserRegisterForm
+from django.contrib.auth.decorators import login_required
 #UserCreationForm is a built in django function for a user register form
 # so users can log into the site
 
@@ -11,8 +12,8 @@ def register(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account Created for {username}!')
-            return redirect('blog-home')
+            messages.success(request, f'Your account has been created. You are now able to log in using {username}!')
+            return redirect('login')
 
     else: 
         form = UserRegisterForm()
@@ -23,4 +24,6 @@ def register(request):
 # message.debug  message.info  message.success  message.warning   message.error
 
 
-
+@login_required
+def profile(request):
+    return render(request, 'users/profile.html')

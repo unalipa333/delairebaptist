@@ -1,0 +1,16 @@
+{% extends 'blog/base.html'%}
+{% load crispy_forms_tags %}
+{% block content%}
+
+    <div class="content-section">
+        <div class="media">
+          <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">  <!-- This is the route to the user profile picture-->
+          <div class="media-body">
+            <h2 class="account-heading">{{user.username}}</h2> <!-- this accesses the variable username-->
+            <p class="text-secondary">{{user.email }}</p> <!-- this accesses the variable email-->
+          </div>
+        </div>
+        <!-- FORM HERE -->
+      </div>
+{% endblock%}
+
