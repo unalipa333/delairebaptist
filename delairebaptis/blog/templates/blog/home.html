@@ -5,9 +5,13 @@
     <h3>Blog Home</h3>
 
     {% for post in posts%}
-        <h5 class='text-muted'>Author: {{post.author}}</h5>
-        <p class='text-muted'><small>{{post.date_posted}}</small></p>
-        <p class='font-italic font-weight-bold' >{{post.content}}</p>
+        <article class="media content-section">
+            <img class = "rounded-circle" src="{{ post.author.profile.image.url }}" alt="profile image">
+            <h5 class='text-muted mr-2'>Author: {{post.author}}</h5>
+            <p class='text-muted'><small>{{post.date_posted}}</small></p>
+            <p class='font-italic font-weight-bold article-content' >{{post.content}}</p>
+
+        </article>
     {% endfor %}
 
 {% endblock%}

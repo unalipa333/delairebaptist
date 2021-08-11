@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from PIL import Image   #this allows us to resize profile image. the library is PIL
 
 
  
@@ -25,5 +26,18 @@ class Profile(models.Model):
 
     def __str__(self):
         return f'{self.user.username} Profile'
+
+
+    def save(self):      #this gets run after the model is saved. It already exists in our parent class but we want to overide it. 
+        super().save()   #super runs the save method of our parent class
+
+        img = Image.open(self.image.path) #this opens the image of the current instance
+
+        if img.height > 200 or img.width > 200:   #compares img height and width
+            output_size = (100,100)                #tuple variable    
+            img.thumbnail(output_size)              # resizes img
+            img.save(self.image.path)               #saves img with new sizing
+
+
 
         
