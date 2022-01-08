@@ -12,4 +12,4 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):     #dunder method (double underscore method) having post printed out by title
-        return self.title 
+        return self.title       #self is getting passed in

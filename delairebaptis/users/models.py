@@ -28,8 +28,8 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
 
-    def save(self):      #this gets run after the model is saved. It already exists in our parent class but we want to overide it. 
-        super().save()   #super runs the save method of our parent class
+    def save(self, *args, **kwargs):      #this gets run after the model is saved. It already exists in our parent class but we want to overide it. 
+        super().save(*args, **kwargs)   #super runs the save method of our parent class
 
         img = Image.open(self.image.path) #this opens the image of the current instance
 
